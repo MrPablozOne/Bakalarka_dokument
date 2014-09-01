@@ -20,22 +20,26 @@
 #Pokus o unittest libovolneho prechodu
 
 
-import neteditor
-
+#import neteditor
+#from neteditor import NetList
 
 
 class TransitionTest:
 
 
-    def __init__(self):
-        print("ahoj")
-
-    def __init__(self,neteditor,project):
+    def __init__(self, neteditor):
         self.neteditor = neteditor
-        self.project = project
-        #self.netlist = self.neteditor.get_net()
+        self.netlist = None
+        self.netlist = self.neteditor.get_net()
+
         #self.netlist._add_net()
+
+    #def doNet(self):
+
+    def doTest(self):
+        print("ahoj2")
 
 
 def doTest():
     print("ahoj2")
+
